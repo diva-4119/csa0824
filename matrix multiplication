@@ -1,0 +1,15 @@
+a=[[1,2,3],[1,2,3],[1,2,3]]
+b=[[1,2,3],[1,2,3],[1,2,3]]
+c=[[1,2,3],[1,2,3],[1,2,3]]
+ab=[[0,0,0],[0,0,0],[0,0,0]]
+    for i in range(3):
+       for j in range(3):
+         for k in range(3):
+            ab[i][j]+=a[i][k]*b[k][j]
+abc=[[0,0,0],[0,0,0],[0,0,0]]
+for i in range(3):
+   for j in range(3):
+        for k in range(3):
+abc[i][j]+=ab[i][k]*c[k][j]
+for rows in abc:
+    print(rows)
