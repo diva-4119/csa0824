@@ -1,0 +1,11 @@
+my_list=[1,2,3,4,5]
+mean=sum(my_list)/len(my_list)
+n=len(my_list)
+if n%2==0:
+    median=(my_list[n//2-1]+my_list[n//2])/2
+else:
+    median=my_list[n//2]
+mode=max(my_list,key=my_list.count)
+print("mean=",mean)
+print("median=",median)
+print("mode=",mode)
